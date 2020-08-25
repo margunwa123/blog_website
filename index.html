@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Simple Blogpage</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>My Blogspot</h1>
+    </nav>
+
+    <div id="content">
+      <img src="me.png" class="profile-image" />
+      <div class="profile">
+        <div class="name">
+          <small>
+            Hello, my name is
+          </small>
+          <span class="strong">Mario Gunawan</span>
+        </div>
+        <div class="subtitle">
+          Random facts about me :
+        </div>
+        <div class="info">My student id is <b>13518114</b></div>
+        <div class="info">
+          I'm 21 years old
+        </div>
+        <div class="info">
+          I'm currently studying at Bandung Institute of Technology (ITB)
+        </div>
+        <div class="info">
+          My favorite food is rendang
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="info">
+        Phone : (+62)087772392020
+      </div>
+      <div class="footer-info">
+        Mario Gunawan / 13518114 K03,
+      </div>
+      <div class="info">
+        <ul class="links">
+          <li>
+            <a class="btn github" href="https://github.com/margunwa123">
+              <i class="fa fa-github"></i>
+              Github</a
+            >
+          </li>
+          <li>
+            <a
+              class="btn instagram"
+              href="https://www.instagram.com/mariogunawan1/"
+            >
+              <i class="fa fa-instagram"></i>
+              Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="btn linkedin"
+              href="https://www.linkedin.com/in/mario-gunawan-2b0183181/"
+            >
+              <i class="fa fa-linkedin"></i>
+              Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        function getDate() {
+          return new Date().getFullYear();
+        }
+        document.getElementsByClassName(
+          'footer-info'
+        )[0].innerHTML += getDate();
+      </script>
+    </footer>
+  </body>
+</html>
