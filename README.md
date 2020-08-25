@@ -9,3 +9,7 @@ You need to have a working web browser to open this web page (e.g. chrome, firef
 # How to run
 
 just open index.html
+
+# Screenshot
+
+![Index.html](screenshot/index.png)
