@@ -1,0 +1,54 @@
+#promotion {
+  text-align: center;
+  background: var(--theme-color-2);
+}
+
+.other-projects {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+}
+
+.project > .image > img {
+  border: 1px solid black;
+  object-fit: cover;
+  width: 150px;
+  float: right;
+  height: 100px;
+}
+
+.project > .description {
+  text-align: left;
+  width: 300px;
+}
+
+.project > .description > .description-header {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.project > .description > .description-text {
+  max-height: 70px;
+  overflow: auto;
+}

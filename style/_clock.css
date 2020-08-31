@@ -1,0 +1,15 @@
+#clock {
+  background-image: url('../image/clock.jpg');
+  background-size: cover;
+}
+
+.utcclock {
+  font-size: 4rem;
+}
+
+.shadow {
+  padding: 100px;
+  background: rgb(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+}

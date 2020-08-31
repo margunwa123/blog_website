@@ -2,10 +2,13 @@
 
 :root {
   --background-color: white;
-  --font-color: black;
-  --navbar-height: 10vh;
+  --font-color: rgb(43, 42, 42);
   --footer-height: 10vh;
-  --theme-color: #add8d6;
+  --theme-color: #a2d5f2;
+  --complementary-color: #f2bfa2;
+  --theme-color-2: #ffc93c;
+  --theme-color-3: #40a8c4;
+  --theme-color-dark: #07689f;
   --main-font: 'Open Sans', Helvetica;
   --title-font: serif;
 }

@@ -11,46 +11,117 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <h1>My Blogspot</h1>
-    </nav>
-
     <div id="content">
-      <img src="me.png" class="profile-image" />
-      <div class="profile">
-        <div class="name">
-          <small>
-            Hello, my name is
-          </small>
-          <span class="strong">Mario Gunawan</span>
+      <section id="intro">
+        <div class="img-container">
+          <img src="image/me.png" class="profile-image" />
         </div>
-        <div class="subtitle">
-          Random facts about me :
+        <div class="profile">
+          <div class="subtitle">Hello, my name is</div>
+          <div class="title">Mario Gunawan</div>
+          <div class="info">
+            I'm a student of
+            <span class="emphasize">Bandung Institute of Technology</span> with
+            student ID <span class="emphasize">13518114</span> . One of the
+            things I love about my campus is that the environment is very
+            supportive and also ambitious for achievements that it leads me to
+            become a more ambitious person myself.
+          </div>
+          <div class="info">
+            I'm also a member of
+            <span class="emphasize">Himpunan Mahasiswa Informatika</span> , my
+            majors' organization. In there, I learn about leadership,
+            relationship (haha), and all other things. Right now I'm
+            <span class="emphasize">21 years old</span>.
+          </div>
         </div>
-        <div class="info">My student id is <b>13518114</b></div>
-        <div class="info">
-          I'm 21 years old
+      </section>
+      <section id="promotion">
+        <div class="title">My Projects:</div>
+        <div class="projects">
+          <div class="project">
+            <div class="image">
+              <img src="image/catalog.png" alt="catalog-website" />
+            </div>
+            <div class="description">
+              <a
+                href="http://catalog-finder.herokuapp.com/"
+                class="description-header"
+                target="_blank"
+                >Catalog Finder</a
+              >
+              <p class="description-text">
+                This is a project that I created with one of my friend (Michael
+                Hans) for a unit, called ITB Student Orchestra. I helped in
+                maintaining the backend, while hans maintains the front-end
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="image">
+              <img src="image/avatar.png" alt="catalog-website" />
+            </div>
+            <div class="description">
+              <a
+                href="http://avatar-graph.herokuapp.com/"
+                class="description-header"
+                target="_blank"
+                >Avatar Graph</a
+              >
+              <p class="description-text">
+                A graph generator created using react and material UI and
+                VisGraph
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="info">
-          I'm currently studying at Bandung Institute of Technology (ITB)
+        <div class="other-projects">
+          And some other projects (mainly from campus) you can find on :
+          <a
+            class="btn github"
+            href="https://github.com/margunwa123"
+            target="_blank"
+          >
+            <i class="fa fa-github"></i>
+            Github</a
+          >
         </div>
-        <div class="info">
-          My favorite food is rendang
+      </section>
+      <section id="hmif">
+        <div class="title">About HMIF...</div>
+        <div class="small-info">
+          HMIF is an organization based on kinship. In this so called 'family',
+          we learn how to collaborate, create, and grow with our friends in
+          Informatics Major. There are a lot of activities happening each month
+          in this organization, and there will be much more in the future.
+          Curious? Click the button below
         </div>
-      </div>
+        <div class="btn-container">
+          <a href="https://www.instagram.com/hmif_itb" class="btn btn-blue"
+            >Go To HMIF Page</a
+          >
+        </div>
+      </section>
+      <section id="clock">
+        <div class="title">UTC Clock</div>
+        <div class="shadow">
+          <div class="utcclock"></div>
+          <div class="">WIB : UTC + 7.00</div>
+        </div>
+      </section>
     </div>
 
     <footer>
-      <div class="info">
-        Phone : (+62)087772392020
-      </div>
-      <div class="footer-info">
-        Mario Gunawan / 13518114 K03,
-      </div>
+      <div class="info">Phone : (+62)087772392020</div>
+      <div class="footer-info">Mario Gunawan / 13518114 K03, &copy;</div>
       <div class="info">
         <ul class="links">
           <li>
-            <a class="btn github" href="https://github.com/margunwa123">
+            <a
+              class="btn github"
+              href="https://github.com/margunwa123"
+              target="_blank"
+            >
               <i class="fa fa-github"></i>
               Github</a
             >
@@ -59,6 +130,7 @@
             <a
               class="btn instagram"
               href="https://www.instagram.com/mariogunawan1/"
+              target="_blank"
             >
               <i class="fa fa-instagram"></i>
               Instagram</a
@@ -68,6 +140,7 @@
             <a
               class="btn linkedin"
               href="https://www.linkedin.com/in/mario-gunawan-2b0183181/"
+              target="_blank"
             >
               <i class="fa fa-linkedin"></i>
               Linkedin</a
@@ -75,15 +148,7 @@
           </li>
         </ul>
       </div>
-
-      <script>
-        function getDate() {
-          return new Date().getFullYear();
-        }
-        document.getElementsByClassName(
-          'footer-info'
-        )[0].innerHTML += getDate();
-      </script>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
